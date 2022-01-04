@@ -7,6 +7,20 @@
             - [掘金]
             - [破站]
 
+
+## 2022-01-04
+- leetcode-100-相同的树
+- [掘金](https://juejin.cn/post/7049259291739422751)
+- [代码](https://github.com/kossfun/koss-studybook/blob/master/src/202201/100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91.js)
+
+
+- leetcode-101-对称二叉树
+- [掘金](https://juejin.cn/post/7049256826851819550)
+- [代码](https://github.com/kossfun/koss-studybook/blob/master/src/202201/101.%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.js)
+
+
+
+
 ## 2021-12-30
 - leetcode- 215.数组中第K个最大元素
 - [掘金](https://juejin.cn/post/7047707531979948039/)
