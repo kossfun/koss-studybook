@@ -1,6 +1,5 @@
 var Twitter = function() {
     this.twitterList = []
-    // 同时发推特，时间可能会相等，添加一个值来记录
     this.step = 0
 };
 
@@ -65,13 +64,11 @@ Twitter.prototype.getNewsFeed = function(userId) {
 
     let tweetIdList = tweetList.map(el => el.tweetId)
     console.log('getNewsFeed', userId, 'allList', JSON.stringify(allList), 'followList', JSON.stringify(followList), 'tweetList', JSON.stringify(tweetList), 'tweetIdList', tweetIdList)
-    // 取最新10条
-    if (tweetIdList.length < 10) {
+     if (tweetIdList.length < 10) {
         return tweetIdList
     } else {
         return tweetIdList.slice(0, 10)
     }
-    
 };
 
 /** 
@@ -131,23 +128,11 @@ Twitter.prototype.hasUser = function(userId) {
     }
     return this.twitterList.findIndex(el => el.userId === userId) !== -1
 }
-
 /**
- * ["Twitter","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","postTweet","getNewsFeed"]
-[[],[1,5],[1,3],[1,101],[1,13],[1,10],[1,2],[1,94],[1,505],[1,333],[1,22],[1,11],[1]]
+ * Your Twitter object will be instantiated and called as such:
+ * var obj = new Twitter()
+ * obj.postTweet(userId,tweetId)
+ * var param_2 = obj.getNewsFeed(userId)
+ * obj.follow(followerId,followeeId)
+ * obj.unfollow(followerId,followeeId)
  */
-
-const twitter = new Twitter();
-twitter.postTweet(1, 5); 
-twitter.postTweet(1, 3); 
-twitter.postTweet(1, 101); 
-twitter.postTweet(1, 13); 
-twitter.postTweet(1, 10); 
-twitter.postTweet(1, 2); 
-twitter.follow(1, 94); 
-twitter.follow(1, 505); 
-twitter.follow(1, 333); 
-twitter.follow(1, 22); 
-twitter.follow(1, 11); 
-twitter.getNewsFeed(1);  
-
